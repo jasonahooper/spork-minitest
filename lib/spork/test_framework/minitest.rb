@@ -8,7 +8,6 @@ class Spork::TestFramework::MiniTest < Spork::TestFramework
 
   def run_tests(argv, stderr, stdout)
     require "minitest/unit"
-    ::MiniTest::Unit.output = stdout
 
     paths, opts = parse_options(argv)
 
